@@ -10,11 +10,14 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
+  <!-- Header -->
   <header>
     <div class="d-flex jc-sb">
       <div class="left-container">
@@ -26,22 +29,22 @@
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="/about">
+            <a href="/about.html">
               About us
             </a>
           </li>
           <li>
-            <a href="/services">
+            <a href="/services.html">
               Our services
             </a>
           </li>
           <li>
-            <a href="/work">
+            <a href="/work.html">
               Our work
             </a>
           </li>
           <li>
-            <a href="/contact">
+            <a href="/contact.html">
               Contact us
             </a>
           </li>
@@ -50,7 +53,9 @@
     </div>
   </header>
 
+  <!-- Main -->
   <main>
+    <!-- Hero -->
     <div class="hero-banner">
       <div class="title">
         <h1>
@@ -65,12 +70,345 @@
         </h1>
       </div>
     </div>
+    <!-- Services -->
+    <section>
+      <div class="container">
+        <div class="services-section">
+          <div class="title-section">
+            <div class="title">
+              We provide the <span class="orange-text">following services</span>
+            </div>
+            <div class="divider row">
+              <span class="black-line"></span>
+              <img src="assets/cheers-cup.svg" alt="">
+              <span class="orange-line"></span>
+            </div>
+          </div>
+          <div class="cards-section">
+            <div class="row">
+              <div class="card">
+                <div class="top-section">
+                  <img src="assets/event-planning.png" alt="Event Planning">
+                </div>
+                <div class="bottom-section">
+                  <div class="title">
+                    Event Planning
+                  </div>
+                  <div class="desc">
+                    As the best event planner companies in the industry, we arm you with a lifetime of experience to
+                    turn
+                    your
+                    idea into the
+                    perfect event.
+                  </div>
+                </div>
+              </div>
+    
+              <div class="card">
+                <div class="top-section">
+                  <img src="assets/protocol-svc.png" alt="Protocol">
+                </div>
+                <div class="bottom-section">
+                  <div class="title">
+                    Protocol Service
+                  </div>
+                  <div class="desc">
+                    We have a team of loyal, professional experts who specialize in protocol so, No matter what type of
+                    event
+                    you are
+                    hosting, we can serve you.
+                  </div>
+                </div>
+              </div>
+    
+              <div class="card">
+                <div class="top-section">
+                  <img src="assets/food-bev.png" alt="Food and Bev">
+                </div>
+                <div class="bottom-section">
+                  <div class="title">
+                    Food and Beverages
+                  </div>
+                  <div class="desc">
+                    Our chefs and bartenders are dedicated to providing you with the highest quality cuisine and
+                    service.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="card">
+                <div class="top-section">
+                  <img src="assets/outside-cat.png" alt="Outside catering">
+                </div>
+                <div class="bottom-section">
+                  <div class="title">
+                    Outside Catering
+                  </div>
+                  <div class="desc">
+                    We're dedicated to providing our clients with top-quality outside catering services,
+                  </div>
+                </div>
+              </div>
+    
+              <div class="card">
+                <div class="top-section">
+                  <img src="assets/video-photo.png" alt="Video and photo image">
+                </div>
+                <div class="bottom-section">
+                  <div class="title">
+                    Video and Photograph
+                  </div>
+                  <div class="desc">
+                    We also specialize in high quality, High definition video and photography services that will make
+                    your
+                    event
+                    unforgettable.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- About -->
+    <section>
+      <div class="about-section">
+        <div class="container">
+          <div class="title-section">
+            <div class="title">
+              About <span class="orange-text">10's Event</span>
+            </div>
+            <div class="divider row">
+              <span class="black-line"></span>
+              <img src="assets/events-icon.svg" alt="">
+              <span class="orange-line"></span>
+            </div>
+          </div>
+    
+          <div class="about row">
+            <div class="col-6 img-section">
+              <img src="assets/logo.jpg" alt="Logo">
+            </div>
+            <div class="col-6">
+              <div class="content">
+                <p>
+                  We are a professional team of loyal and professional event coordinators who work together to serve our
+                  clients' every
+                  need. From start to finish, we are dedicated to making sure your event is a success.
+                </p>
+                <p>
+                  We offer a full range of services including event planning, catering, protocol, and venue selection. Our
+                  team members
+                  are experts in their fields so you can rest assured that your events will be in good hands.
+                </p>
+                <a href="/contact.html" class="btn btn-orange">
+                  Contact us
+                </a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="team-pic">
+            <img src="assets/group-img.png" alt="Group Picture">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Portfolio -->
+    <section>
+      <div class="portfolio-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <div class="row fdc">
+                <div class="title">
+                  150
+                </div>
+                <div class="desc">
+                  Events planned
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="row fdc">
+                <div class="title">
+                  40
+                </div>
+                <div class="desc">
+                  Protocol Services
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="row fdc">
+                <div class="title">
+                  230
+                </div>
+                <div class="desc">
+                  Customers
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="row fdc">
+                <div class="title">
+                  245
+                </div>
+                <div class="desc">
+                  Projects
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- REviews -->
+    <section>
+      <div class="reiviews-section">
+        <div class="container">
+          <div class="title-section">
+            <div class="title">
+              Why people <span class="orange-text">Loves us</span>
+            </div>
+            <div class="divider row">
+              <span class="black-line"></span>
+              <img src="assets/celebrations.svg" alt="">
+              <span class="orange-line"></span>
+            </div>
+          </div>
+        </div>
+    
+        <div class="container">
+          <div class="slick-section">
+            <div id="user-reviews"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CTA -->
+    <div class="cta-section">
+      <div class="container">
+        <div class="section-wrapper">
+          <div class="row fdc">
+            <div class="title">
+              Looking for the ultimate planning partner?
+            </div>
+            <div class="desc">
+              Looking for the ultimate planning partner? With us you will get the full package of everything we have to
+              offer: from
+              event management, to event coordination, theming, catering, décor & styling, conference... Don't forget we
+              can
+              also
+              provide entertainment and venue sourcing too!.
+            </div>
+            <div class="cta">
+              <a href="/work" class="btn btn-orange">
+                See our work
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer>
-
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          <div class="brand-section">
+            <div class="row fdc">
+              <div class="col">
+                <img src="assets/logo.jpg" alt="Logo">
+              </div>
+              <div class="col">
+                <div class="icons-ctr">
+                  <ul>
+                    <li>
+                      <a href="#" target="_blank">
+                        <img src="assets/Facebook.svg" alt="Facebook">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank">
+                        <img src="assets/Instagram.svg" alt="Instagram">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank">
+                        <img src="assets/Twitter.svg" alt="Twitter">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="heading">
+            Services
+          </div>
+          <ul>
+            <li>Event Planning</li>
+            <li>Protocol Services</li>
+            <li>Outside Catering</li>
+            <li>Food and Beverages</li>
+            <li>Venue Planner</li>
+            <li>Video & Photography</li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <div class="heading">
+            Quick links
+          </div>
+          <ul class="nav-links">
+            <li class="active">
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/about.html">
+                About us
+              </a>
+            </li>
+            <li>
+              <a href="/services.html">
+                Our services
+              </a>
+            </li>
+            <li>
+              <a href="/work.html">
+                Our work
+              </a>
+            </li>
+            <li>
+              <a href="/contact.html">
+                Contact us
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <div class="content">
+            <p>
+              We would love to work with you on planning and
+              organizing your events in order to make your dream events come to life.
+            </p>
+            <a class="btn btn-orange" href="/contact.html">
+              Contact us
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="main.js"></script>
 </body>
 
