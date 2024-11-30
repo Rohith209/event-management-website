@@ -1,13 +1,13 @@
 :root {
   --orange: #f16722;
-    --white: #ffffff;
+  --white: #ffffff;
     --black: #000000;
     --light-black: #0d0600;
 }
 
 * {
   border: 0;
-    margin: 0;
+  margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
@@ -17,8 +17,9 @@
 
 html,
 body {
-  background-color: #ebebeb;
+  background-color: transparent;
 }
+
 
 .d-flex {
   display: flex;
@@ -56,9 +57,10 @@ body {
   width: fit-content;
   letter-spacing: 0.01em;
 }
+
 header {
   border-radius: 20px;
-    background-color: var(--white);
+  background-color: var(--white);
     height: 56px;
     padding: 0 24px;
     display: flex;
@@ -71,12 +73,12 @@ header {
 
 header .d-flex {
   width: 100%;
-    align-items: center;
+  align-items: center;
 }
 
 header ul {
   display: flex;
-    align-items: center;
+  align-items: center;
     gap: 24px;
     list-style: none;
 }
@@ -84,7 +86,7 @@ header ul {
 header ul li,
 header ul li a {
   font-size: 16px;
-    line-height: 1;
+  line-height: 1;
     color: var(--black);
     text-decoration: none;
 }
@@ -92,12 +94,12 @@ header ul li a {
 header ul li.active a,
 header ul li:hover a {
   font-weight: 500;
-    color: var(--orange);
+  color: var(--orange);
 }
 
 img {
   max-width: 100%;
-    height: auto;
+  height: auto;
 }
 
 header .left-container {
@@ -106,22 +108,33 @@ header .left-container {
 
 .hero-banner {
   height: 500px;
-    margin-top: -92px;
+  margin-top: -92px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: url("assets/hero-bnr.png");
   background-size: 100% 100%;
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 
+.hero-banner.about {
+  background-image: url('assets/group-img.png');
+}
+
+.hero-banner.contact {
+  background-image: url('assets/contact-hero.png');
+}
+
+.hero-banner.work {
+  background-image: url('assets/work-img.png');
+}
 .hero-banner .title {
   margin-top: 92px;
 }
 
 .hero-banner .title h1 {
   max-width: 100%;
-    margin: 0 auto;
+  margin: 0 auto;
     color: var(--orange);
     font-weight: 500;
     text-align: center;
@@ -131,7 +144,7 @@ header .left-container {
 
 .hero-banner .title h1 .white {
   color: var(--white);
-    display: block;
+  display: block;
 }
 
 footer {
@@ -166,6 +179,11 @@ footer {
   flex: 1 1 33.33%;
 }
 
+.col-6 {
+  width: 50%;
+  max-width: 50%;
+  flex: 1 1 50%;
+}
 .brand-section img {
   max-width: 100px;
 }
@@ -274,6 +292,7 @@ footer .content p {
 }
 
 .services-section .title,
+.about-page .about-us-section .title,
 .reiviews-section .title,
 .about-section .title {
   text-align: center;
@@ -283,6 +302,7 @@ footer .content p {
 }
 
 .services-section .divider,
+.about-page .about-us-section .divider,
 .reiviews-section .divider,
 .about-section .divider {
   display: flex;
@@ -292,6 +312,7 @@ footer .content p {
 }
 
 .services-section .black-line,
+.about-page .about-us-section .black-line,
 .reiviews-section .black-line,
 .about-section .black-line {
   width: 120px;
@@ -300,6 +321,7 @@ footer .content p {
 }
 
 .services-section .orange-line,
+.about-page .about-us-section .orange-line,
 .reiviews-section .orange-line,
 .about-section .orange-line {
   width: 120px;
@@ -478,4 +500,225 @@ footer .content p {
 
 .slick-dots {
   bottom: -48px;
+}
+.about-page .about-us-section {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.about-page .about-us-section .desc-section,
+.about-page .about-us-section .desc-section p,
+.about-page .about-us-section .desc-section div {
+  color: var(--light-black);
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+
+.about-page .about-us-section .desc-section div.orange-text {
+  color: var(--orange);
+  font-weight: 500;
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+
+.about-page .about-us-section .title-section {
+  max-width: fit-content;
+  margin-bottom: 24px;
+}
+
+.about-page .about-us-section .title {
+  text-align: left;
+}
+
+
+.about-page .about-us-section .row {
+  align-items: flex-start;
+  gap: 64px;
+}
+
+.about-page .about-us-section .row.divider {
+  align-items: center;
+  gap: 24px;
+}
+
+.contact-us-wrapper {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.contact-us-wrapper .two-col-view .row {
+  align-items: start;
+  gap: 64px;
+}
+
+.contact-us-wrapper .main-title {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 72px;
+  color: var(--black);
+  margin-bottom: 24px;
+}
+
+.contact-us-wrapper .input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.contact-us-wrapper .input-field label {
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--orange);
+  font-weight: 500;
+  display: block;
+}
+
+.contact-us-wrapper .input-field input,
+.contact-us-wrapper .input-field textarea {
+  padding: 16px 24px;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  height: 40px;
+}
+
+.contact-us-wrapper .input-field textarea {
+  height: auto;
+  min-height: 120px;
+}
+
+.contact-us-wrapper .btn {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.contact-info .wrapper {
+  margin-bottom: 32px;
+}
+
+.contact-info .title {
+  margin-bottom: 16px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+
+.contact-info .desc ul li,
+.contact-info .desc ul li a {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.contact-info .desc ul {
+  padding-left: 48px;
+}
+
+.maps-view-img {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.maps-view-img img {
+  border-radius: 24px;
+}
+
+.work-section {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.work-section .img-container {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  margin-bottom: 64px;
+}
+
+.work-section .text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid #dbdbdb;
+  padding: 32px;
+  gap: 24px;
+  background-image: url('assets/work-tile-bg.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 50%;
+}
+
+.work-section .text-section h1 {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 700;
+  color: var(--orange);
+}
+
+.work-section .text-section h2 {
+  font-size: 42px;
+  line-height: 46px;
+  font-weight: 600;
+  color: var(--black);
+  max-width: 80%;
+}
+
+.work-section .text-section p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+  color: var(--light-black);
+}
+
+.image-grid {
+  display: grid;
+  grid-template-areas:
+    "image1 image2"
+    "image3 image4"
+  ;
+  gap: 12px;
+  width: 50%;
+}
+
+.image-item img {
+  width: 100%;
+  display: block;
+  height: auto;
+  border-radius: 8px;
+  height: 100%;
+}
+
+/* .image-item {
+  max-height: 200px;
+} */
+
+.img1 {
+  grid-area: image1;
+}
+
+.img2 {
+  grid-area: image2;
+}
+
+.img3 {
+  grid-area: image3;
+}
+
+.img4 {
+  grid-area: image4;
+}
+
+.img5,
+.img6 {
+  grid-area: image5;
+}
+
+.wide-image {
+  grid-area: wide;
 }
